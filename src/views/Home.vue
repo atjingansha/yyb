@@ -1,7 +1,7 @@
 <template>
   <el-container>
     <el-header class="header">
-      <div class="title">云E办</div>
+      <div class="title" @click="toHome"  >云E办</div>
 
       <i class="el-dropdown-link" style="margin-bottom: 4px">
         <img class="img-border" :src="user.userFace" />
@@ -60,9 +60,11 @@
 export default {
   name: "Home",
 
+
   data() {
     return {
       user: JSON.parse(window.sessionStorage.getItem("user")),
+
     };
   },
 
@@ -90,6 +92,13 @@ export default {
           });
       }
     },
+
+    toHome(){
+      this.$router.push('/home')
+    },
+
+
+
   },
 
   computed: {
@@ -124,6 +133,7 @@ export default {
   font-size: 30px;
   font-family: 华文楷体;
   color: rgb(247, 245, 245);
+     cursor: pointer;
 }
 
 .el-dropdown-link {

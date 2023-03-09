@@ -21,7 +21,7 @@ import PosMana from '@/components/sys/PosMana'
 export default {
   data(){
     return{
-      activeName:'JoblebelMana'
+      activeName:'DepMana'
     }
   },
   components:{
