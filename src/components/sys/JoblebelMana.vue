@@ -45,7 +45,7 @@
         </el-table-column>
         <el-table-column prop="titlelevel" label="职称等级" width="150">
         </el-table-column>
-        <el-table-column prop="createdate" label="创建日期" width="150">
+        <el-table-column prop="createDate" label="创建日期" width="150">
         </el-table-column>
         <el-table-column prop="enabled" label="是否启用" width="150">
           <template slot-scope="scope">
